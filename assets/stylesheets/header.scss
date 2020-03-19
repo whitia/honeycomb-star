@@ -1,0 +1,47 @@
+
+
+@media screen and (min-width:480px) {
+  /* ナビゲーションバー */
+  .navbar {
+    padding: 32px 96px;
+  
+    /* ブランド */
+    .navbar-brand {
+      font-size: 24px;
+  
+      /* ロゴイメージ */
+      img {
+        width: 40px;
+        height: 40px;
+        float: left;
+        margin-top: 4px;
+        margin-right: 8px;
+      }
+  
+      /* サブタイトル */
+      .small {
+        font-size: 40%;
+        margin-top: -8px;
+      }
+    }
+    .navbar-brand:hover {
+      opacity: 0.6;
+    }
+  
+    /* メニューアイテム */
+    .nav-item {
+      font-size: 80%;
+      font-weight: 700;
+      width: 80px;
+      text-align: center;
+      position: relative;
+  
+      .nav-link {
+        color: #fff;
+      }
+      .nav-link:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}
