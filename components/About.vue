@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="about">
+    <div class="content-wrap">
     </div>
   </div>
 </template>
