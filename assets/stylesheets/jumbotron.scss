@@ -2,18 +2,17 @@
   background-image: url('/images/main.jpg');
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
   min-height: 100vh;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  padding: 45vh 96px;
   position: relative;
 
+  /* スクロール */
   .scroll-wrap {
     position: absolute;
     cursor: pointer;
     color: #fff;
-    right: 96px;
+    right: 80px;
     bottom: 0;
     height: 220px;
 
@@ -30,8 +29,8 @@
       height: 130px;
       margin: 50px auto 10px;
       animation-name: scroll-border;
-      animation-duration: 2s;
-      animation-delay: 4s;
+      animation-duration: 4s;
+      animation-delay: 2s;
       animation-timing-function: linear;
       animation-iteration-count: infinite;
     }

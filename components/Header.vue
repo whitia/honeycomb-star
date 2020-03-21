@@ -1,9 +1,9 @@
 <template>
   <div>
-    <b-navbar fixed="top" toggleable="lg" type="dark">
+    <b-navbar fixed="top" toggleable="lg" type="dark" id="header" class="hidden">
       <b-navbar-brand to="/" class="navbar-brand">
         <img src="/images/shooting-star.png" />
-        HONEYCOM-START
+        HONEYCOM-STAR
         <div class="small">吉田シゲロウ オフィシャルウェブサイト</div>
       </b-navbar-brand>
   
@@ -23,3 +23,19 @@
     </b-navbar>
   </div>
 </template>
+
+<script>
+if (process.client) {
+  window.addEventListener( "scroll", function() {
+    var headerElement = document.getElementById( "header" );
+    var rect = headerElement.getBoundingClientRect() ;
+    var y = rect.top + window.pageYOffset;
+
+    if (y > 0) {
+      headerElement.classList.remove('hidden');
+    } else {
+      headerElement.classList.add('hidden');
+    }
+  });
+}
+</script>

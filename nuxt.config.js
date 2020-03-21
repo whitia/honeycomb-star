@@ -13,7 +13,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/images/shooting-star.png' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Muli:400,700&display=swap' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Michroma&display=swap' }
     ]
   },
   /*
@@ -26,7 +26,8 @@ export default {
   css: [
     '@/assets/stylesheets/common.scss',
     '@/assets/stylesheets/header.scss',
-    '@/assets/stylesheets/jumbotron.scss'
+    '@/assets/stylesheets/jumbotron.scss',
+    '@/assets/stylesheets/about.scss'
   ],
   /*
   ** Plugins to load before mounting the App
