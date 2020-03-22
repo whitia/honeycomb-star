@@ -3,7 +3,7 @@
     <b-navbar fixed="top" toggleable="lg" type="dark" id="header" class="hidden">
       <b-navbar-brand to="/" class="navbar-brand">
         <img src="/images/star.png" />
-        HONEYCOM-STAR
+        HONEYCOMB-STAR
         <div class="small">吉田シゲロウ オフィシャルウェブサイト</div>
       </b-navbar-brand>
   

@@ -5,7 +5,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'Honeycom-Star 吉田シゲロウ オフィシャルウェブサイト',
+    title: 'Honeycomb-Star 吉田シゲロウ オフィシャルウェブサイト',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
