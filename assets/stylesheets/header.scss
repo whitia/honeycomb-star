@@ -2,29 +2,29 @@
   /* ナビゲーションバー */
   .navbar {
     font-family: 'Michroma', sans-serif;
-    padding: 8px 96px;
+    padding: 4px 96px;
     background-color: rgba(0,0,0,1);
-    background-image: url('/images/bg-header.jpg');
     background-position: bottom center;
     background-size: cover;
     transition: all 0.5s ease;
   
     /* ブランド */
     .navbar-brand {
-      font-size: 20px;
+      font-size: 16px;
   
       /* ロゴイメージ */
       img {
-        width: 40px;
-        height: 40px;
+        width: 32px;
+        height: 32px;
         float: left;
+        margin-top: 2px;
         margin-right: 8px;
       }
   
       /* サブタイトル */
       .small {
         font-size: 40%;
-        margin-top: -8px;
+        margin-top: -4px;
       }
     }
     .navbar-brand:hover {

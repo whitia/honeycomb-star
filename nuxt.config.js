@@ -12,7 +12,7 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/images/shooting-star.png' },
+      { rel: 'icon', type: 'image/x-icon', href: '/images/star.png' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Michroma&display=swap' }
     ]
   },
