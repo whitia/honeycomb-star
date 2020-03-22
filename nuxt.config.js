@@ -27,7 +27,8 @@ export default {
     '@/assets/stylesheets/common.scss',
     '@/assets/stylesheets/header.scss',
     '@/assets/stylesheets/cover.scss',
-    '@/assets/stylesheets/about.scss'
+    '@/assets/stylesheets/about.scss',
+    '@/assets/stylesheets/works.scss'
   ],
   /*
   ** Plugins to load before mounting the App

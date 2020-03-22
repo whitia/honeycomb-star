@@ -1,0 +1,28 @@
+.box {
+  display: flex;
+  margin-bottom: 32px;
+
+  div {
+    width: 33.3333%;
+    padding: 32px;
+    background: #090909;
+  }
+
+  div:nth-of-type(n+2) {
+    margin-left: 32px;
+  }
+
+  h3 {
+    margin: 32px 0;
+    color: #00a18c;
+    font-size: 14px;
+    font-family: 'Michroma', sans-serif;
+    font-weight: 700;
+  }
+
+  p {
+    margin: 0;
+    font-size: 12px;
+    text-align: justify;
+  }
+}

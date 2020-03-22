@@ -10,7 +10,7 @@
         <p>ProToolsを中心としたプライベートスタジオ「Honeycomb-Star」を開設。</p>
         <p>サントラやリミックス、ゲームSE制作などを数多く手掛ける。</p>
         <p>M.H.R.Accentsよりソロ・プロジェクト名義「SIGERO」で1stミニ・アルバムをリリース。</p>
-        <nuxt-link to="/" class="button">詳しいプロフィールへ</nuxt-link>
+        <nuxt-link to="/" class="button">詳しいプロフィールを見る</nuxt-link>
       </div>
     </div>
   </div>
