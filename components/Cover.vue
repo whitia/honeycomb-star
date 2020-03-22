@@ -6,6 +6,7 @@
         <div class="scroll-inner">SCROLL</div>
         <div class="scroll-line"></div>
       </div>
+
     </div>
   </div>
 </template>

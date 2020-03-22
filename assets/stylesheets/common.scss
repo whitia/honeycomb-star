@@ -1,6 +1,8 @@
 $base: #00a18c;
+$d-base: darken($base, 15%);
 
-body {
+html, body {
+  scroll-behavior: smooth;
   color: #fff;
   background-color: #000;
   background-image: url('/images/bg-texture.png');
@@ -15,4 +17,59 @@ a:hover {
   opacity: 0.6;
   color: #fff;
   text-decoration: none;
+}
+
+.wrap {
+  min-width: 100%;
+  min-height: 100vh;
+  padding: 25vh 25vw;
+}
+
+.content {
+  position: relative;
+  font-size: 14px;
+
+  .line {
+    margin: 64px 0;
+    width: 96px;
+    height: 4px;
+    background: repeating-linear-gradient(45deg, $base, $base 5px, $d-base 5px, $d-base 10px);
+  }
+
+  h2 {
+    font-family: 'Michroma', sans-serif;
+    font-size: 48px;
+  }
+
+  h3 {
+    margin-bottom: 32px;
+  }
+
+  p {
+    line-height: 32px;
+  }
+
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  margin: 16px 0;
+  padding: 16px 56px 16px 32px;
+  border: 2px solid #222;
+}
+.button::after {
+  content: '';
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+  transition: .5s;
+}
+.button:hover::after {
+  right: 20px;
 }

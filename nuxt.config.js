@@ -26,7 +26,7 @@ export default {
   css: [
     '@/assets/stylesheets/common.scss',
     '@/assets/stylesheets/header.scss',
-    '@/assets/stylesheets/jumbotron.scss',
+    '@/assets/stylesheets/cover.scss',
     '@/assets/stylesheets/about.scss'
   ],
   /*

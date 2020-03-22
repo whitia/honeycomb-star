@@ -1,61 +1,9 @@
-$base: #00a18c;
-$d-base: darken($base, 15%);
-
-.content-wrap {
-  min-width: 100%;
-  min-height: 100vh;
-  padding: 40vh 25vw;
-}
-
-.content {
-  position: relative;
+.img-profile {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-image: url('/images/profile.png');
   background-repeat: no-repeat;
   background-position: right top 64px;
   background-size: 30%;
-  padding-right: 350px;
-  font-size: 14px;
-
-  .line {
-    margin: 64px 0;
-    width: 96px;
-    height: 4px;
-    background: repeating-linear-gradient(45deg, $base, $base 5px, $d-base 5px, $d-base 10px);
-  }
-
-  h2 {
-    font-family: 'Michroma', sans-serif;
-    font-size: 48px;
-  }
-
-  h3 {
-    margin-bottom: 32px;
-  }
-
-  p {
-    line-height: 32px;
-  }
-
-  .button {
-    position: relative;
-    display: inline-block;
-    margin: 16px 0;
-    padding: 16px 56px 16px 32px;
-    background: #111;
-  }
-  .button::after {
-    content: '';
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    width: 8px;
-    height: 8px;
-    border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
-    transform: rotate(45deg);
-    transition: .5s;
-  }
-  .button:hover::after {
-    right: 20px;
-  }
 }
