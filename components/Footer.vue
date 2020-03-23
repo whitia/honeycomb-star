@@ -2,7 +2,7 @@
   <div>
     <div class="footer">
       <div class="mb-2">
-        <nuxt-link to="/">HOME</nuxt-link>
+        <nuxt-link to="#">HOME</nuxt-link>
         <nuxt-link :to="$parent.to.about">ABOUT</nuxt-link>
         <nuxt-link :to="$parent.to.works">WORKS</nuxt-link>
         <nuxt-link to="/">BLOG</nuxt-link>

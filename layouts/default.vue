@@ -4,52 +4,45 @@
   </div>
 </template>
 
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+<script>
+if (process.client) {
+  window.onload = () => {
+    scrollElementsAnimation();
+  }
+
+  window.addEventListener( "scroll", function() {
+    scrollHeaderAnimation();
+    scrollElementsAnimation();
+  });
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
+// スクロール時、ヘッダーのスタイルを変更
+var scrollHeaderAnimation = () => {
+  var headerElement = document.getElementById( "header" );
+  var rect = headerElement.getBoundingClientRect() ;
+  var y = rect.top + window.pageYOffset;
+
+  if (y > 0) {
+    headerElement.classList.remove('hidden');
+  } else {
+    headerElement.classList.add('hidden');
+  }
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
+// スクロール時、要素をふわっと出現
+var scrollElementsAnimation = () => {
+  document.querySelectorAll('.effect').forEach(element => {
+    var elemPos = element.getBoundingClientRect().top + window.pageYOffset;
+    var scroll = window.pageYOffset;
+    var windowHeight = window.innerHeight;
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
+    var delay = element.dataset.delay ? element.dataset.delay : 0;
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+    if (scroll > elemPos - windowHeight) {
+      setTimeout(() => {
+        element.classList.add('show');
+      }, delay);
+    }
+  });
 }
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
-</style>
+</script>

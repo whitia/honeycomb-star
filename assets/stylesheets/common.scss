@@ -57,7 +57,12 @@ a:hover {
   margin: 16px 0;
   padding: 16px 56px 16px 32px;
   border: 2px solid #222;
+  border-radius: 0;
   background-color: transparent;
+}
+.button:hover {
+  border-color: #222;
+  background-color: transparent !important;
 }
 .button::after {
   content: '';
@@ -75,14 +80,20 @@ a:hover {
   right: 20px;
 }
 
-.effect-fade {
-  background-position: right top 128px;
+.effect {
   opacity: 0;
-  transform: translate(0, 45px);
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
 }
-  
-.effect-fade.effect-scroll {
+
+.effect.show {
   opacity: 1;
-  transform: translate(0, 0);
+  transform: none !important;
+}
+
+.effect.up {
+  transform: translate(0, 45px);
+}
+
+.effect.lr {
+  transform: translate(-45px, 0);
 }
