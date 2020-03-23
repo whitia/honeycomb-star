@@ -1,0 +1,32 @@
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 40px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  padding: 16px 0;
+  font-size: 8px;
+  font-family: 'Michroma', sans-serif;
+  text-align: center;
+
+  p {
+    margin-bottom: 8px;
+  }
+
+  span {
+    padding: 0 8px;
+  }
+  span:nth-of-type(n+2) {
+    border-left: 1px solid #555;
+  }
+}

@@ -26,6 +26,7 @@ export default {
   css: [
     '@/assets/stylesheets/common.scss',
     '@/assets/stylesheets/header.scss',
+    '@/assets/stylesheets/footer.scss',
     '@/assets/stylesheets/cover.scss',
     '@/assets/stylesheets/about.scss',
     '@/assets/stylesheets/works.scss'
