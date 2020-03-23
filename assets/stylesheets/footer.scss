@@ -18,10 +18,10 @@ body {
   font-family: 'Michroma', sans-serif;
   text-align: center;
 
-  span {
-    padding: 0 8px;
+  a {
+    padding: 0 12px;
   }
-  span:nth-of-type(n+2) {
+  a:nth-of-type(n+2) {
     border-left: 1px solid #555;
   }
 }
