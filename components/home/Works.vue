@@ -4,15 +4,17 @@
       <div class="content">
         <h2>WORKS</h2>
         <div class="line"></div>
-        <div class="box">
-          <div v-for="(work,key) in $store.state.works.works" :key="key">
-            <img :src="'https://storage.googleapis.com/honeycomb-star.appspot.com/images/' + work.image" class="img-fluid" />
-            <h3>{{ work.title }}</h3>
-            <p style="white-space: pre-wrap;">{{ work.content.replace(/\\n/g, '\n') }}</p>
+        <div class="row">
+          <div class="col-12 col-lg-4" v-for="(work,key) in $store.state.works.works" :key="key">
+            <div class="box">
+              <img :src="'https://storage.googleapis.com/honeycomb-star.appspot.com/images/' + work.image" class="img-fluid" />
+              <h3>{{ work.title }}</h3>
+              <p style="white-space: pre-wrap;">{{ work.content.replace(/\\n/g, '\n') }}</p>
+            </div>
           </div>
         </div>
         <div class="text-right">
-          <nuxt-link to="/works" class="button">すべての実績を見る</nuxt-link>
+          <nuxt-link to="/works" class="button">過去の仕事一覧を見る</nuxt-link>
         </div>
       </div>
     </div>
