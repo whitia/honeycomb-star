@@ -31,7 +31,7 @@ a:hover {
 
   .line {
     margin: 64px 0;
-    width: 96px;
+    width: 64px;
     height: 4px;
     background: repeating-linear-gradient(45deg, $base, $base 5px, $d-base 5px, $d-base 10px);
   }
@@ -73,4 +73,16 @@ a:hover {
 }
 .button:hover::after {
   right: 20px;
+}
+
+.effect-fade {
+  background-position: right top 128px;
+  opacity: 0;
+  transform: translate(0, 45px);
+  transition: all 1s ease-in-out;
+}
+  
+.effect-fade.effect-scroll {
+  opacity: 1;
+  transform: translate(0, 0);
 }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid effect-fade">
 
       <div class="scroll-wrap">
         <div class="scroll-inner">SCROLL</div>
