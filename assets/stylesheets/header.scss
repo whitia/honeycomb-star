@@ -1,8 +1,72 @@
-@media screen and (min-width:480px) {
+/* トグルアイコン */
+.navbar-dark .navbar-toggler {
+  border: 0;
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+}
+
+/* ナビゲーションバー */
+.navbar {
+  font-family: 'Michroma', sans-serif;
+  padding: 8px;
+  background-color: #000;
+  background-position: bottom center;
+  background-size: cover;
+  transition: all 0.5s ease;
+
+  /* ブランド */
+  .navbar-brand {
+    padding: 0;
+    font-size: 16px;
+
+    /* ロゴイメージ */
+    img {
+      width: 32px;
+      height: 32px;
+      float: left;
+      margin-top: 2px;
+      margin-right: 8px;
+    }
+
+    /* サブタイトル */
+    .small {
+      font-size: 8px;
+      margin-top: -4px;
+    }
+  }
+  .navbar-brand:hover {
+    opacity: 0.6;
+  }
+
+  /* メニューアイテム */
+  .nav-item {
+    position: relative;
+    margin-right: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: right;
+
+    .nav-link {
+      color: #fff;
+    }
+    .nav-link:hover {
+      opacity: 0.6;
+    }
+  }
+}
+.hidden {
+  padding: 8px;
+  background: none !important;
+  transition: all 0.5s ease;
+}
+
+@media screen and (min-width: 480px) {
   /* ナビゲーションバー */
   .navbar {
     font-family: 'Michroma', sans-serif;
-    padding: 8px 96px;
+    padding: 12px 96px;
     background-color: #000;
     background-position: bottom center;
     background-size: cover;
@@ -10,6 +74,7 @@
   
     /* ブランド */
     .navbar-brand {
+      padding: 0;
       font-size: 16px;
   
       /* ロゴイメージ */
@@ -33,7 +98,7 @@
   
     /* メニューアイテム */
     .nav-item {
-      margin-left: 32px;
+      margin-left: 16px;
       font-size: 8px;
       font-weight: 700;
       text-align: center;

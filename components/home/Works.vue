@@ -15,7 +15,7 @@
           </div>
         </div>
         <div class="text-right">
-          <nuxt-link to="/works" class="button effect lr">過去の仕事一覧を見る</nuxt-link>
+          <nuxt-link to="/works" class="button effect lr" data-delay="500">過去の仕事一覧を見る</nuxt-link>
         </div>
       </div>
     </div>
